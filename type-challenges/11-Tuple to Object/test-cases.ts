@@ -16,5 +16,5 @@ type cases = [
 type error = TupleToObject<[[1, 2], {}]>
 
 
-// const let  js世界
-// type interface  type世界
+// const let        js世界
+// type interface   type世界
