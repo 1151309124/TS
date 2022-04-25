@@ -50,6 +50,6 @@ function readonly(obj) {
 
 
 //  1.返回一个对象
-//  2.遍历obj (js 对象 ts 接口)
-//  3.加上readonly 关键字
-//  4.通过 key 获取 obj(接口) 里面的值
+//  2.遍历obj (js 对象 ts 接口) in -> mapped   keyof ->lookup
+//  3.加上readonly 关键字  新的知识点
+//  4.通过 key 获取 obj(接口) 里面的值 indexed
