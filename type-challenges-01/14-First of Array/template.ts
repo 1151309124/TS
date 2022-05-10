@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2022-04-25 13:18:02
- * @LastEditTime: 2022-04-25 13:48:38
+ * @LastEditTime: 2022-04-26 09:47:27
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: \新建文件夹e:\vs CODE\TS-practice\type-challenges\14-First of Array\template.ts
@@ -18,7 +18,7 @@ type head2 = First<arr2> // expected to be 3 */
 
 // 1.extends 类型条件判断
 //----------------------------------------------/
-// type First<T extends any[]> = T extends [] ? never : T[0]
+type First<T extends any[]> = T extends [] ? never : T[0]
 
 // const first = (arr) => {
 //     //arr是不是空数组 如果是 返回never
@@ -45,15 +45,15 @@ type head2 = First<arr2> // expected to be 3 */
 
 // //看看某个值是不是在union里面
 // // 1 extends 1  ,1 extends 2 ,1 extends 3 
-//----------------------------------------------/
 // type t2= 1 extends ages[number]?'true':'false'//true
 
+//----------------------------------------------/
 // type First<T extends any[]> = T[0] extends T[number] ? T[0] : never
 
 
 // 4.inter的使用  解构
 //----------------------------------------------/
-type First<T extends any[]> = T extends [infer First,... infer Rest]?First:never
+// type First<T extends any[]> = T extends [infer First,... infer Rest]?First:never
 // const first = (arr) => {
 //     //arr是不是空数组 如果是 返回never
 //     const [First,...rest] =arr

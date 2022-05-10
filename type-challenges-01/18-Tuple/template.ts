@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2022-04-25 19:21:28
- * @LastEditTime: 2022-04-25 19:55:58
+ * @LastEditTime: 2022-04-26 10:03:14
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: \新建文件夹e:\vs CODE\TS-practice\type-challenges\18-Tuple\template.ts
@@ -28,4 +28,7 @@ function getlength(arr) {
 }
 
 // 什么是Tuple类型
+// 定死定长的数组类型
 // tuple 和普通数组有什么区别
+// 数组取出来是number类型,tuple取出来是具体数字
+// 
